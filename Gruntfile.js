@@ -6,25 +6,19 @@ module.exports = function(grunt) {
     jasmine : {
       src : 'src/**/*.js',
       options : {
-        specs : 'spec/**/*.js'
+        specs : 'spec/**/*.js',
+        template : require('grunt-template-jasmine-istanbul'),
+        templateOptions: {
+          coverage: 'reports/coverage.json',
+          report: 'reports/coverage'
+        }
       }
     },
-    jshint: {
-      all: [
-        'Gruntfile.js',
-        'src/**/*.js',
-        'spec/**/*.js'
-      ],
-      options: {
-        jshintrc: '.jshintrc'
-      }
-    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jasmine');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('test', ['jshint', 'jasmine']);
+  grunt.registerTask('test', ['jasmine']);
 
   grunt.registerTask('default', ['test']);
 
