@@ -1,4 +1,4 @@
-# grunt-contrib-jasmine-example [![Build Status](https://secure.travis-ci.org/jsoverson/grunt-contrib-jasmine-example.png?branch=master)](http://travis-ci.org/jsoverson/grunt-contrib-jasmine-example)
+# grunt-contrib-jasmine-example [![Build Status](https://secure.travis-ci.org/kaezarrex/grunt-contrib-jasmine-example.png?branch=master)](http://travis-ci.org/jsoverson/grunt-contrib-jasmine-example)
 
 > Example application using grunt-contrib-jasmine
 
